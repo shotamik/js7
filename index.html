@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form-section">
+        <form class="form" id="sign-up" action="#" method="get" novalidate>
+            <div class="input-field">
+                <label for="username">Enter User Name</label>
+                <input type="text" id="username" placeholder="user name" required />
+                <span class="error-message" id="username-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label for="email">Enter Email</label>
+                <input type="email" id="email" placeholder="email" required />
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div>
+
+            </div>
+            
+            <div class="input-field">
+                <label for="password">Enter Password</label>
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="password"
+                    minlength="5"
+                    required
+                />
+                <span class="error-message" id="password-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label for="personal_number">Enter your personal number</label>
+                <input type="number" id="personal_number" placeholder="Personal Number" required />
+                <span class="error-message" id="persNumber-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label for="mobile_number">Enter your mobile number</label>
+                <input type="text" id="mobile_number" placeholder="Mobile Number" required />
+                <span class="error-message" id="mobNumber-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label for="job_description">Job Description</label>
+                <input type="text" id="job_description" placeholder="Job Description" maxlength="50"/>
+                <span class="error-message" id="descr-error"></span>
+            </div>
+
+
+            <div class="input-field">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="modal" id="sign-in">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Modal Title</h3>
+                <button class="modal-close">X</button>
+            </div>
+            <div class="modal-body">this is modal body</div>
+        </div>
+    </div>
+
+    <div class="modal" id="sign-up-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Modal Title</h3>
+                <button class="modal-close">X</button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+                facilis officiis nulla unde laudantium quam commodi ab fugit. Qui
+                doloribus expedita repudiandae minus aperiam nulla alias placeat ab,
+                aspernatur adipisci.
+            </div>
+        </div>
+    </div>
+
+    <button class="open-modal">open modal 2</button>
+
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
